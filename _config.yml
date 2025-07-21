@@ -1,0 +1,34 @@
+title: "Kevoh's Portfolio - Full Stack Web Developer"
+description: "Professional portfolio showcasing web development skills, projects, and experience"
+baseurl: ""
+url: "https://kevoh6309.github.io"
+
+# GitHub Pages settings
+github_username: kevoh6309
+repository: Kevoh-s-portifolio-Web
+
+# SEO and social media
+author: "Kevoh"
+twitter_username: kevohmutwiri9
+facebook_username: kevohx2071
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - DEPLOYMENT.md
+  - optimize-images.md
+  - deploy-ready/
+  - portfolio-deploy.zip
+
+# Include files that start with underscore
+include:
+  - _config.yml
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
