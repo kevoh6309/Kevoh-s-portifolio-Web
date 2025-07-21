@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kevoh - Full Stack Web Developer Portfolio. Specializing in React.js, Node.js, and modern web development. View my projects and get in touch!" />
+  <meta name="keywords" content="web developer, frontend developer, React, JavaScript, portfolio, Kevoh" />
+  <meta name="author" content="Kevoh" />
+  <meta property="og:title" content="Kevoh's Portfolio - Web Developer" />
+  <meta property="og:description" content="Full Stack Web Developer specializing in React.js and modern web technologies" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="picha/logo.png" />
+  <title>Kevoh's Portfolio - Full Stack Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="picha/logo.png" alt="">
+    </div>
+    <h1>Kevoh</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a href="#" onclick="downloadResume()" class="resume-btn">Download Resume</a>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="hero-content">
+      <h2 class="test-head">Welcome to My Portfolio</h2>
+      <p class="hero-description">I'm Kevoh — a passionate <span class="highlight">Full Stack Web Developer</span> turning ideas into real-world digital experiences with modern technologies and clean code.</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <button class="but primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+        <button class="but secondary" onclick="window.open('https://chat.whatsapp.com/JZ5RwZZeM6bJAvftk8TB42', '_blank')">Join WhatsApp Group</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="test-head">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>I'm a frontend-focused developer who enjoys solving problems and building user-friendly web apps. I love clean code, minimal designs, and responsive layouts.</p>
+        <p>With over 3 years of experience in web development, I specialize in creating modern, responsive applications that provide exceptional user experiences. I'm passionate about staying up-to-date with the latest technologies and best practices in the industry.</p>
+        <div class="certifications">
+          <h3>Certifications & Achievements</h3>
+          <ul>
+            <li>🏆 Certified React Developer</li>
+            <li>🎯 Google Web Developer Certificate</li>
+            <li>⚡ Performance Optimization Specialist</li>
+            <li>🔒 Web Security Best Practices</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="test-head">My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        <h3>Frontend Development</h3>
+        <ul>
+          <li>💻 HTML5, CSS3, JavaScript</li>
+          <li>⚛️ React.js, React Native</li>
+          <li>🎨 UI/UX & Responsive Design</li>
+        </ul>
+        <div class="skill-progress">
+          <div class="progress-item">
+            <span>JavaScript/React</span>
+            <div class="progress-bar">
+              <div class="progress-fill" data-skill="90"></div>
+            </div>
+            <span>90%</span>
+          </div>
+          <div class="progress-item">
+            <span>HTML/CSS</span>
+            <div class="progress-bar">
+              <div class="progress-fill" data-skill="95"></div>
+            </div>
+            <span>95%</span>
+          </div>
+          <div class="progress-item">
+            <span>UI/UX Design</span>
+            <div class="progress-bar">
+              <div class="progress-fill" data-skill="85"></div>
+            </div>
+            <span>85%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <h3>Backend Development</h3>
+        <ul>
+          <li>📦 Firebase, Supabase</li>
+          <li>🔒 Security & Data Encryption</li>
+          <li>📊 RESTful APIs & Database Management</li>
+        </ul>
+        <div class="skill-progress">
+          <div class="progress-item">
+            <span>Node.js/Express</span>
+            <div class="progress-bar">
+              <div class="progress-fill" data-skill="80"></div>
+            </div>
+            <span>80%</span>
+          </div>
+          <div class="progress-item">
+            <span>Database Design</span>
+            <div class="progress-bar">
+              <div class="progress-fill" data-skill="85"></div>
+            </div>
+            <span>85%</span>
+          </div>
+          <div class="progress-item">
+            <span>API Development</span>
+            <div class="progress-bar">
+              <div class="progress-fill" data-skill="88"></div>
+            </div>
+            <span>88%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <h3>Version Control & Deployment</h3>
+        <ul>
+          <li>🧰 Git, GitHub</li>
+          <li>🌐 Heroku, Netlify, Firebase Hosting</li>
+          <li>🔄 Continuous Integration (CI) & Continuous Deployment (CD)</li>
+        </ul>
+        <div class="skill-progress">
+          <div class="progress-item">
+            <span>Git/GitHub</span>
+            <div class="progress-bar">
+              <div class="progress-fill" data-skill="92"></div>
+            </div>
+            <span>92%</span>
+          </div>
+          <div class="progress-item">
+            <span>Cloud Deployment</span>
+            <div class="progress-bar">
+              <div class="progress-fill" data-skill="87"></div>
+            </div>
+            <span>87%</span>
+          </div>
+          <div class="progress-item">
+            <span>DevOps/CI-CD</span>
+            <div class="progress-bar">
+              <div class="progress-fill" data-skill="75"></div>
+            </div>
+            <span>75%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="test-head">My Projects</h2>
+    
+    <div class="projects-content-wrapper">
+      <div class="project-visuals-container">
+        <h3>Project Visuals</h3>
+        <p>Explore some of my recent projects through these images.</p>
+        <div class="image-carousel">
+          <img src="picha/a.jpg" alt="Meditime App - Meditation Timer Interface" class="carousel-image" />
+          <img src="picha/b.jpg" alt="SecureDiary App - Personal Journal Dashboard" class="carousel-image" />
+          <img src="picha/c.jpg" alt="Lantern Bound - Comic Reading Platform" class="carousel-image" />
+          <img src="picha/d.jpg" alt="TaskFlow - Project Management Tool Interface" class="carousel-image" />
+          <img src="picha/e.jpg" alt="E-commerce Website - Product Showcase" class="carousel-image" />
+          <img src="picha/f.jpg" alt="Weather App - Real-time Weather Data" class="carousel-image" />
+          <img src="picha/g.jpg" alt="Social Media Dashboard - Analytics View" class="carousel-image" />
+        </div>
+      </div>
+
+      <div class="project-descriptions-container">
+        <h3>Project Details</h3>
+        <div class="feature-box">
+          <h3>Meditime - Meditation Timer App</h3>
+          <p>A peaceful meditation timer app with calming UI, breathing exercises, and progress tracking. Built with React and local storage for user preferences.</p>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">Local Storage</span>
+            <span class="tech-tag">PWA</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kevoh/meditime" target="_blank" class="project-link">
+              <span>📂</span> GitHub
+            </a>
+            <a href="https://meditime-app.netlify.app" target="_blank" class="project-link">
+              <span>🚀</span> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <h3>SecureDiary - Personal Journal App</h3>
+          <p>A secure personal diary web app with end-to-end encryption, cloud backup, and mood tracking. Features include password protection and data export.</p>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Encryption</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kevoh/secure-diary" target="_blank" class="project-link">
+              <span>📂</span> GitHub
+            </a>
+            <a href="https://secure-diary.vercel.app" target="_blank" class="project-link">
+              <span>🚀</span> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <h3>Lantern Bound - Comic Reading Platform</h3>
+          <p>A vibrant comic reading platform with smooth page transitions, bookmark features, and responsive design. Built for comic enthusiasts with passion for storytelling.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">PWA</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kevoh/lantern-bound" target="_blank" class="project-link">
+              <span>📂</span> GitHub
+            </a>
+            <a href="https://lantern-bound.netlify.app" target="_blank" class="project-link">
+              <span>🚀</span> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <h3>TaskFlow - Project Management Tool</h3>
+          <p>A comprehensive project management application with team collaboration, task tracking, and real-time updates. Perfect for agile development teams.</p>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Socket.io</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kevoh/taskflow" target="_blank" class="project-link">
+              <span>📂</span> GitHub
+            </a>
+            <a href="https://taskflow-pm.herokuapp.com" target="_blank" class="project-link">
+              <span>🚀</span> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="break"></div>
+
+  <section id="testimonials">
+    <h2 class="test-head">What People Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-box">
+        <blockquote>
+          "Kevoh’s web development skills are unmatched. We had a tight deadline and he delivered a beautifully crafted site on time. Highly recommend!"
+          <footer><a href="https://danco48.github.io/Dancoport/">Danco</a> <br>Senior Web Designer</footer>
+        </blockquote>
+      </div>
+
+      <div class="testimonial-box">
+        <blockquote>
+          "I worked with Kevoh on several projects. His attention to detail and creativity always stand out. A true professional!"
+          <footer><a class="link" href="">Nyoike</a> <br>Freelance Designer</footer>
+        </blockquote>
+      </div>
+
+      <div class="testimonial-box">
+        <blockquote>
+          "Kevoh is an exceptional developer. He not only delivers but also collaborates well, bringing great ideas to the table. I look forward to working with him again."
+          <footer><a class="link" href="">Mtu Kufu</a> <br>Product Manager</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <div class="contact-text">
+        <h2>Contact Me</h2>
+        <p>I'm always open to chat about web development, collaborations, or new ideas. Reach out through the form or connect via socials!</p>
+
+        <div class="contact-icons">
+          <a href="https://www.facebook.com/kevohx2071" target="_blank" aria-label="Facebook Profile"><img src="picha/communication.png" alt="Facebook" /></a>
+          <a href="https://x.com/kevohmutwiri9?t=QvvSpkeUAtGB2DXEiuX6ww&s=09" target="_blank" aria-label="Twitter Profile"><img src="picha/icons8-twitter-50.png" alt="Twitter" /></a>
+          <a href="https://linkedin.com/in/kevoh-mutwiri" target="_blank" aria-label="LinkedIn Profile"><img src="picha/icons8-linkedin-50.png" alt="LinkedIn" /></a>
+          <a href="https://t.me/+R185Bc9PfSgyNjFk" target="_blank" aria-label="Telegram Channel"><img src="picha/icons8-telegram-94.png" alt="Telegram" /></a>
+          <a href="https://github.com/kevoh" target="_blank" aria-label="GitHub Profile"><span class="github-icon">📂</span></a>
+        </div>
+      </div>
+
+      <form action="https://formspree.io/f/manoobpg" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kevoh. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
